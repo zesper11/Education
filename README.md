@@ -1,4 +1,4 @@
-# School Website
+# School Website (education)
 this is a school website, created for practic which mainly include html and css.
 
 breaf of section's:
