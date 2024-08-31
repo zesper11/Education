@@ -1,41 +1,67 @@
-@media (max-width:700px) {
-   
-    *{
-        margin: 0px;
-        padding: 0px;
+/* Responsive styles for screens with max-width 700px */
+@media (max-width: 700px) {
+    /* Reset margins and paddings */
+    * {
+        margin: 0;
+        padding: 0;
     }
 
-    .main-msg h1{
-        font-size: 30px;
+    /* Adjust font size for main message heading */
+    .main-msg h1 {
+        font-size: 30px; /* Smaller font size for smaller screens */
     }
     
-    .nav-links ul li{
-        display: block;
+    /* Display menu items as block for vertical alignment */
+    .nav-links ul li {
+        display: block; /* Stack items vertically */
     }
 
-    .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0px;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
+    /* Style the navigation links container */
+    .nav-links {
+        position: absolute; /* Position absolute for menu off-screen initially */
+        background: #f44336; /* Red background */
+        height: 100vh; /* Full viewport height */
+        width: 200px; /* Fixed width */
+        top: 0; /* Top position */
+        right: -200px; /* Off-screen initially */
+        text-align: left; /* Align text to the left */
+        z-index: 2; /* Higher stacking order */
+        transition-duration: 0.5s; /* Smooth transition */
+        overflow: hidden;
     }
 
-    .nav-links i{
-        display: block;
-        cursor: pointer;
+    /* Display the menu icon */
+    .nav-links i {
+        display: block; /* Show icon */
+        cursor: pointer; /* Pointer cursor */
     }
 
-    .fa-bars{
-        display: inline;
-        cursor: pointer;
+    /* Display the hamburger menu icon */
+    .fa-bars {
+        display: inline; /* Show icon */
+        cursor: pointer; /* Pointer cursor */
+        position: absolute; /* Position absolutely */
+        right: 2vw; /* Right positioning */
+        color: rgba(255, 255, 255, 0.845); /* Semi-transparent white color */
+        font-size: 17px; /* Font size */
     }
 
-    .nav-links ul li{
-        padding-left: 30px;
-        padding-top: 10px;
+    /* Add padding to menu items for better spacing */
+    .nav-links ul li {
+        padding-left: 30px; /* Left padding */
+        padding-top: 10px; /* Top padding */
+    }
+
+    /* Adjust logo size */
+    .nav-logo {
+        width: 100px; /* Smaller logo for smaller screens */
+    }
+
+    .courses-row{
+        flex-direction: column;
+    }
+
+    .campus-row{
+        flex-direction: column;
     }
 }
