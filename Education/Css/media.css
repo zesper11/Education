@@ -1,67 +1,267 @@
-/* Responsive styles for screens with max-width 700px */
-@media (max-width: 700px) {
-    /* Reset margins and paddings */
-    * {
-        margin: 0;
-        padding: 0;
-    }
+/* Reset default margins and paddings, set font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
 
-    /* Adjust font size for main message heading */
-    .main-msg h1 {
-        font-size: 30px; /* Smaller font size for smaller screens */
-    }
-    
-    /* Display menu items as block for vertical alignment */
-    .nav-links ul li {
-        display: block; /* Stack items vertically */
-    }
+p{
+   font-size: 12px; /* Font size */
+}
 
-    /* Style the navigation links container */
-    .nav-links {
-        position: absolute; /* Position absolute for menu off-screen initially */
-        background: #f44336; /* Red background */
-        height: 100vh; /* Full viewport height */
-        width: 200px; /* Fixed width */
-        top: 0; /* Top position */
-        right: -200px; /* Off-screen initially */
-        text-align: left; /* Align text to the left */
-        z-index: 2; /* Higher stacking order */
-        transition-duration: 0.5s; /* Smooth transition */
-        overflow: hidden;
-    }
+/* Header section styling */
+.header {
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/Img/banner.png); /* Gradient overlay with background image */
+    position: relative; /* Position relative to allow absolute positioning of elements inside */
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire container */
+}
 
-    /* Display the menu icon */
-    .nav-links i {
-        display: block; /* Show icon */
-        cursor: pointer; /* Pointer cursor */
-    }
+/* Navigation styling */
+.nav {
+    display: flex; /* Flexbox layout for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 0 2vw; /* Horizontal padding */
+}
 
-    /* Display the hamburger menu icon */
-    .fa-bars {
-        display: inline; /* Show icon */
-        cursor: pointer; /* Pointer cursor */
-        position: absolute; /* Position absolutely */
-        right: 2vw; /* Right positioning */
-        color: rgba(255, 255, 255, 0.845); /* Semi-transparent white color */
-        font-size: 17px; /* Font size */
-    }
+/* Logo styling */
+.nav-logo img {
+    margin-top: 10px; /* Top margin */
+    width: 150px; /* Logo width */
+}
 
-    /* Add padding to menu items for better spacing */
-    .nav-links ul li {
-        padding-left: 30px; /* Left padding */
-        padding-top: 10px; /* Top padding */
-    }
+/* Navigation links container styling */
+.nav-links {
+    flex: 1; /* Take up available space */
+    list-style: none; /* Remove default list styling */
+    text-align: right; /* Align text to the right */
+    margin-left: 5px; /* Left margin */
+}
 
-    /* Adjust logo size */
-    .nav-logo {
-        width: 100px; /* Smaller logo for smaller screens */
-    }
+/* Navigation menu items styling */
+.nav-links ul li {
+    display: inline-block; /* Inline-block for horizontal alignment */
+    position: relative; /* Position relative for pseudo-elements */
+    padding-left: 2vw; /* Padding left for spacing */
+}
 
-    .courses-row{
-        flex-direction: column;
-    }
+/* Icon (close menu) styling */
+.nav-links i {
+    display: none; /* Initially hidden */
+}
 
-    .campus-row{
-        flex-direction: column;
-    }
+/* Hamburger menu icon styling */
+.fa-bars {
+    display: none; /* Initially hidden */
+}
+
+/* Navigation links styling */
+.nav-links li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-size: 12px; /* Font size */
+}
+
+/* Underline animation on hover */
+.nav-links li a::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    display: block;
+    background: #f44336; /* Red underline */
+    margin: auto;
+    transition-duration: 0.3s; /* Smooth transition */
+}
+
+.nav-links li a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* Main message section styling */
+.main-msg {
+    width: 85%; /* Width of the message section */
+    position: absolute; /* Position absolute to center it */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of its width and height */
+    text-align: center; /* Center text */
+    color: rgb(255, 255, 255); /* White text color */
+}
+
+/* Main message heading styling */
+.main-msg h1 {
+    font-size: 50px; /* Font size */
+}
+
+/* Main message paragraph styling */
+.main-msg p {
+    margin: 5px 0 14px 0; /* Margin around paragraph */
+    color: rgba(255, 255, 255, 0.805); /* Semi-transparent white text color */
+}
+
+/* Main button styling */
+.main-btn {
+    display: inline-block; /* Inline-block for button styling */
+    text-decoration: none; /* Remove underline from link */
+    border: 1px solid white; /* White border */
+    padding: 12px 30px; /* Padding */
+    font-size: 13px; /* Font size */
+    background: transparent; /* Transparent background */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative; /* Relative position for potential pseudo-elements */
+    color: white; /* White text color */
+    transition-duration: 0.3s; /* Smooth transition */
+    border-radius: 1px; /* Slightly rounded corners */
+}
+
+.main-btn:hover {
+    border: 1px solid #f44336; /* Red border on hover */
+    background-color: #f44336; /* Red background on hover */
+}
+
+
+/* courses section stylying */
+
+.courses{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 70px;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    line-height: 14px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.courses-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.courses-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+}
+
+.courses-row h3{
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.courses-col:hover{
+    box-shadow: 0px 0px 20px 0px  rgba(0,0,0,.2);
+}
+
+.campus-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.campus{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.campus-col{
+    flex-basis: 30%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+
+.campus-lyr{
+    font-size: 20px;
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    color: transparent;
+}
+
+.campus-lyr h3{
+    font-weight: 350;
+}
+
+.campus-lyr:hover{
+    font-size: 20px;
+    padding-top: 50%;
+    color: white;
+    background: #ff1100bd;
+}
+
+.fesi{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.fesi-col{
+    flex-basis: 30%;
+    overflow: hidden;
+    position: relative;
+}
+
+.fesi-col img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.reviews{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.reviews-row{
+    display: flex;
+}
+
+.reviews-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.reviews-col img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
 }
