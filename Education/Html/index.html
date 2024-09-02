@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Site</title>
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link to external CSS files -->
-    <link rel="stylesheet" href="/Css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/Css/style.css">
+    <!-- responsive css -->
+     <link rel="stylesheet" href="/Css/media.css">
 </head>
 <body>
-    <!--heading section-->
+    <!-- Header Section -->
     <section class="header">
-        <!-- Navigation section -->
+        <!-- Navigation -->
         <nav class="nav">
-            <!-- Logo -->
-            <a class="nav-logo" href="#"><img src="/Img/logo.png" alt="logo"></a>
-            <!-- Navigation links -->
+            <a href="#" class="nav-logo">
+                <img src="/Img/logo.png" alt="Logo">
+            </a>
             <div class="nav-links" id="navLinks">
-                <!-- Close menu icon with onclick event to hide menu -->
-                <i class="fa-solid fa-xmark" style="color: white; padding: 5px;" onclick="hideMenu()"></i>
-                <!-- Menu items -->
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -34,116 +31,143 @@
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
-            <!-- Hamburger menu icon with onclick event to show menu -->
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        <!-- Main message section -->
+
+        <!-- Main Message -->
         <div class="main-msg">
             <h1>Made by Rohan</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatum dolor sit amet <br>placeat tempora iusto doloribus quo id fugit</p>
-            <a class="main-btn" href="#">Know more about us</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatum dolor sit amet.</p>
+            <a href="#" class="main-btn">Know more about us</a>
         </div>
     </section>
+
+    <!-- Courses Section -->
     <section class="courses">
-        <h2>Cources we offer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus minima.  
-        </p>
+        <h2>Courses We Offer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus minima.</p>
         <div class="courses-row">
             <div class="courses-col">
-                <h3>Intermedit</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam dolor laudantium quia, saepe sequi! Officiis cum architecto possimus nulla neque harum obcaecati rerum quae quia, impedit odit tenetur exercitationem.</p>
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam dolor laudantium quia.</p>
             </div>
             <div class="courses-col">
                 <h3>Degree</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam dolor laudantium quia, saepe sequi! Officiis cum architecto possimus nulla neque harum obcaecati rerum quae quia, impedit odit tenetur exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam dolor laudantium quia.</p>
             </div>
             <div class="courses-col">
                 <h3>Graduate</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam dolor laudantium quia, saepe sequi! Officiis cum architecto possimus nulla neque harum obcaecati rerum quae quia, impedit odit tenetur exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam dolor laudantium quia.</p>
             </div>
         </div>
     </section>
+
+    <!-- Campus Section -->
     <section class="campus">
         <h2>Our Global Campus</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum saepe error obcaecati fugit id laboriosam enim?
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum saepe error obcaecati fugit id laboriosam enim?</p>
         <div class="campus-row">
             <div class="campus-col">
-                <img src="/Img/london.png" alt="london.png">
+                <img src="/Img/london.png" alt="London">
                 <div class="campus-lyr">
                     <h3>LONDON</h3>
                 </div>
             </div>
             <div class="campus-col">
-                <img src="/Img/washington.png" alt="washington.png">
+                <img src="/Img/newyork.png" alt="New York">
+                <div class="campus-lyr">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="/Img/washington.png" alt="Washington">
                 <div class="campus-lyr">
                     <h3>WASHINGTON</h3>
                 </div>
             </div>
-            <div class="campus-col">
-                <img src="/Img/newyork.png" alt="newyork.png">
-                <div class="campus-lyr">
-                    <h3>NEWORK</h3>
-                </div>
-            </div>
         </div>
     </section>
-    <section class="fesi">
-        <h2>Our functionality</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum saepe error obcaecati fugit id laboriosam enim?
-        </p>
-        <div class="campus-row">
-            <div class="fesi-col">
-                <img src="/Img/cafeteria.png" alt="london.png">
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Our Features</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum saepe error obcaecati fugit id laboriosam enim?</p>
+        <div class="features-row">
+            <div class="features-col">
+                <img src="/Img/cafeteria.png" alt="Cafeteria">
                 <h3>Clean & Good Food</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio modi reprehenderit dignissimos rem aliquid?</p>
             </div>
-            <div class="fesi-col">
-                <img src="/Img/library.png" alt="washington.png">
-                <h3>best Liberery</h3>
+            <div class="features-col">
+                <img src="/Img/library.png" alt="Library">
+                <h3>Best Library</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio modi reprehenderit dignissimos rem aliquid?</p>
             </div>
-            <div class="fesi-col">
-                <img src="/Img/basketball.png" alt="newyork.png">
+            <div class="features-col">
+                <img src="/Img/basketball.png" alt="Playground">
                 <h3>Biggest Playground</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio modi reprehenderit dignissimos rem aliquid?</p>
             </div>
         </div>
     </section>
+
+    <!-- Reviews Section -->
     <section class="reviews">
-        <h2>What Our Student Says</h2>
+        <h2>What Our Students Say</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est nulla amet blanditiis quae modi tempore.</p>
         <div class="reviews-row">
-            <div class="reviews-col"></div>
-                <img src="/Img/user1.jpg" alt="user1">
-                <div class="user-info">
+            <div class="reviews-col">
+                <img src="/Img/user1.jpg" alt="User 1">
+                <div class="review-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit aspernatur nobis commodi illo voluptates sapiente atque voluptas, quo quam aperiam quaerat laudantium nisi eveniet possimus nostrum nesciunt. Iste, sapiente.</p>
                     <h3>Random Girl</h3>
                 </div>
             </div>
-            <div class="reviews-col"></div>
-                <img src="/Img/user1.jpg" alt="user1">
-                <div class="user-info">
+            <div class="reviews-col">
+                <img src="/Img/user2.jpg" alt="User 2">
+                <div class="review-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit aspernatur nobis commodi illo voluptates sapiente atque voluptas, quo quam aperiam quaerat laudantium nisi eveniet possimus nostrum nesciunt. Iste, sapiente.</p>
-                    <h3>Random Girl</h3>
+                    <h3>Random Guy</h3>
+                </div>
             </div>
         </div>
-        </div>
     </section>
-    <!-- JavaScript for menu functionality -->
-    <script>
-        // Get the navigation links element
-        var navLinks = document.getElementById("navLinks");
+    <section class="contact-us">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+        <a href="#" class="sec-btn">Contact Us</a>
+    </section>
+    <section class="footer">
+        <nav class="foot-nav">
+            <a href="#" class="foot-nav-logo">
+                <img src="/Img/logo.png" alt="Logo">
+            </a>
+            <div class="foot-nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <br>
+                <p style="display: flex; justify-content: center; display: none;">zesper46@gmail.com</p>
+            </div>
+        </nav>
+    </section>
 
-        // Function to show the menu
+    <!-- JavaScript for Menu Functionality -->
+    <script>
+        const navLinks = document.getElementById("navLinks");
+
         function showMenu() {
             navLinks.style.right = "0";
         }
 
-        // Function to hide the menu
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
     </script>
 </body>
 </html>
+
+
