@@ -1,0 +1,64 @@
+/* Responsive Styles */
+@media (max-width: 700px) {
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        padding-top: 60px;
+        transition: right 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+
+    .fa-bars, .nav-links i {
+        display: block;
+    }
+
+    .courses-row, .campus-row, .features-row, .reviews-row {
+        flex-direction: column;
+    }
+
+    .main-msg h1 {
+        font-size: 30px;
+    }
+
+    .main-msg p {
+        font-size: 14px;
+    }
+
+    .main-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .reviews h2 {
+        font-size: 25px;
+    }
+
+    .contact-us h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .foot-nav{
+        flex-direction: column;
+    }
+
+    .foot-nav p{
+        display: block;
+    }
+
+}
